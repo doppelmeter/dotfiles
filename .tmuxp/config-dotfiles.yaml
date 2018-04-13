@@ -1,0 +1,18 @@
+session_name: config-dotfiles
+windows:
+  - window_name: overview
+    layout: tiled
+    shell_command_before:
+      - cd ~/
+    panes:
+    - shell_command:
+      - cd ~/dotfiles/
+      - ls -a
+    - shell_command:
+      - cd ~/dotfiles/
+      - git status
+    - shell_command:
+      - cd ~/dotfiles/
+    - shell_command:
+      - echo "Hallo Welt"
+
