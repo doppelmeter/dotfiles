@@ -7,7 +7,7 @@ windows:
     panes:
     - shell_command:
       - cd ~/dotfiles/
-      - ls -a
+      - tree -a
     - shell_command:
       - cd ~/dotfiles/
       - git status
