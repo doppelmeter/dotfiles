@@ -21,8 +21,8 @@ Plugin 'skywind3000/asyncrun.vim'
 Plugin 'w0rp/ale'
 
 
-Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'jnurmine/Zenburn'
+"Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -52,17 +52,26 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 " Disable swap-files
-" =======================================================================================
+" ===================================================
 
 set noswapfile
 
 
+
 " Key Mappings
-" =======================================================================================
+" ===================================================
 
 " Map Save to Ctrl-S
 :nmap <c-s> :w<CR>
 :imap <c-s> <Esc>:w<CR>a
+
+
+
+" Color Schema
+" ===================================================
+
+colo ron
+syntax on
 
 
 
@@ -93,17 +102,17 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " utf8 support
 set encoding=utf-8
 
-" Python syntax highlighting
-let python_highlight_all=1
-syntax on
 
-" Colorshemes
-if has('gui_running')
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme zenburn
-endif
+let python_highlight_all=1
+
+
+
+
+
+
+
+
+
 
 " Hide .pyc files in Nerdtree
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
