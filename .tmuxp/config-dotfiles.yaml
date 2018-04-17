@@ -14,5 +14,7 @@ windows:
     - shell_command:
       - cd ~/dotfiles/
     - shell_command:
-      - echo "Hallo Welt"
+       - echo "git add <file-name>"
+       - echo "git commit -a -m 'comment'"
+       - echo "git push -u origin master"
 
