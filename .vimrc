@@ -51,7 +51,21 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
-"
+" Disable swap-files
+" =======================================================================================
+
+set noswapfile
+
+
+" Key Mappings
+" =======================================================================================
+
+" Map Save to Ctrl-S
+:nmap <c-s> :w<CR>
+:imap <c-s> <Esc>:w<CR>a
+
+
+
 " " Enable folding
 set foldmethod=indent
 set foldlevel=99

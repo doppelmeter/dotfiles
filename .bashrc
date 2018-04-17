@@ -122,3 +122,7 @@ fi
 
 alias ~~="~"
 
+
+# Dissable XOFF
+bind -r '\C'
+stty -ixon

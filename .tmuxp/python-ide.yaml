@@ -1,0 +1,15 @@
+session_name: python-ide
+windows:
+- window_name: main
+  layout: main-vertical
+  shell_command_before:
+    -  cd ~/
+  panes:
+    - shell_command:
+        - echo ""
+    - shell_command:
+        - echo ""
+    - shell_command:
+        - echo ""
+    - shell_command:
+        - echo ""
