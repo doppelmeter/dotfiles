@@ -50,7 +50,11 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-"
+
+
+
+
+
 " Disable swap-files
 " ===================================================
 
@@ -64,6 +68,9 @@ set noswapfile
 " Map Save to Ctrl-S
 :nmap <c-s> :w<CR>
 :imap <c-s> <Esc>:w<CR>a
+
+" Enable folding with the spacebar
+nnoremap <space> za
 
 
 
@@ -79,8 +86,6 @@ syntax on
 set foldmethod=indent
 set foldlevel=99
 
-" Enable folding with the spacebar
-nnoremap <space> za
 
 " displays docstring even when folding
 let g:SimpylFold_docstring_preview=1
